@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ================= 1. SEO ON-PAGE (ALUNO: EDITE AQUI) ================= -->
+  <!-- Título ideal: 30 a 65 caracteres, incluindo a palavra-chave principal -->
+  <title>Yellow Jacket | Moda Masculina Jovem e Urbana</title>
+
+  <!-- Descrição ideal: 70 a 165 caracteres resumindo o valor e chamada para ação -->
+  <meta name="description" content="Encontre camisetas oversized, moletons, calças cargo e acessórios na Yellow Jacket. Monte combinações no provador 3D e descubra seu estilo.">
+  <meta name="keywords" content="moda masculina jovem, camisetas oversized, moletons masculinos, calças cargo, moda urbana, Yellow Jacket">
+  <meta name="author" content="Equipe Yellow Jacket">
+  <link rel="canonical" href="https://seu-dominio.com.br/">
+
+  <!-- Open Graph (prévia ao compartilhar link no WhatsApp/Redes) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Yellow Jacket | Moda Masculina Jovem">
+  <meta property="og:description" content="Estilo urbano, conforto e autenticidade. Conheça os lançamentos e monte seus looks com o provador 3D da Yellow Jacket.">
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230284c7'/><text x='50' y='66' font-size='50' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='bold'>P</text></svg>">
+
+  <!-- ================= 2. DADOS ESTRUTURADOS (SCHEMA.ORG) ================= -->
+  <!-- Troque "@type" conforme o nicho:
+       Academia: "SportsActivityLocation" | Jogos: "WebApplication"
+       Humanitário/ONG: "NGO" | Educação: "EducationalOrganization" | Loja: "Store" -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Store",
+    "name": "Yellow Jacket",
+    "description": "Loja de moda masculina jovem com camisetas oversized, moletons, calças cargo e acessórios, além de provador virtual 3D para criar combinações.",
+    "url": "https://seu-dominio.com.br/",
+    "address": { "@type": "PostalAddress", "addressCountry": "BR" }
+  }
+  </script>
+
+  <!-- ================= 3. ESTILOS CSS (TROQUE AS CORES EM :root) ================= -->
+  <style>
+    :root{
+      --primaria:#e9dd32;     
+      --primaria-esc:#0a0a04;
+      --clara:#e0f2fe;
+      --texto:#0f172a; --suave:#475569; --fundo:#ffffff; --alt:#f8fafc; --borda:#e2e8f0;
+      --ok:#16a34a; --max:1040px;
+    }
+    *{margin:0;padding:0;box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{font-family:'Segoe UI',system-ui,sans-serif;color:var(--texto);background:var(--fundo);line-height:1.6}
+    a{color:var(--primaria);text-decoration:none} a:hover{text-decoration:underline}
+    .skip{position:absolute;left:-9999px;top:0;background:var(--primaria);color:#fff;padding:10px 16px;z-index:99}
+    .skip:focus{left:0}
+
+    /* Cabeçalho e Navegação */
+    header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(6px);border-bottom:1px solid var(--borda)}
+    .wrap{max-width:var(--max);margin:0 auto;padding:0 18px}
+    .head{display:flex;align-items:center;justify-content:space-between;padding:12px 18px;gap:12px}
+    .logo{font-weight:900;font-size:1.15rem;color:var(--texto);display:flex;align-items:center;gap:8px}
+    .logo-box{width:34px;height:34px;border-radius:8px;background:var(--primaria);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900}
+    nav{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+    nav a{color:var(--suave);font-weight:600;font-size:.9rem;padding:6px 10px;border-radius:6px}
+    nav a:hover{background:var(--clara);color:var(--primaria-esc);text-decoration:none}
+    .btn{display:inline-block;background:var(--primaria);color:#fff;padding:11px 22px;border-radius:99px;font-weight:700;border:none;cursor:pointer;font-size:.92rem}
+    .btn:hover{background:var(--primaria-esc);text-decoration:none}
+    .btn-out{background:#fff;color:var(--primaria);border:2px solid var(--primaria)}
+
+    /* Seções */
+    section{padding:52px 0}
+    .hero{background:linear-gradient(135deg,var(--clara) 0%,#f8fafc 100%)}
+    .grid2{display:grid;grid-template-columns:1.2fr 1fr;gap:28px;align-items:center}
+    .hero-modelo{display:flex;align-items:center;justify-content:center;min-width:0}
+    .hero-modelo img{display:block;width:100%;max-width:460px;height: 204px;object-fit:contain;border-radius:16px}
+    @media(max-width:740px){.hero-modelo img{height:280px}}
+    .grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;margin-top:20px}
+    h1{font-size:clamp(1.7rem,4vw,2.4rem);line-height:1.2;margin-bottom:12px}
+    h2{font-size:1.5rem;margin-bottom:10px} h3{font-size:1.05rem;margin-bottom:6px}
+    .card{background:#fff;border:1px solid var(--borda);border-radius:12px;padding:20px}
+    .alt{background:var(--alt)}
+    .lista{list-style:none;display:grid;gap:8px;margin-top:10px}
+    .lista li::before{content:'✓ ';color:var(--ok);font-weight:900}
+
+    /* Formulário */
+    .form-box{max-width:540px;margin:0 auto;background:#fff;border:1px solid var(--borda);border-radius:12px;padding:24px}
+    .campo{margin-bottom:12px}
+    .campo label{display:block;font-size:.82rem;font-weight:700;margin-bottom:4px}
+    .campo input,.campo select,.campo textarea{width:100%;padding:10px;border:1px solid var(--borda);border-radius:8px;font:inherit}
+    .ok-msg{display:none;background:#dcfce7;border:1px solid var(--ok);color:#166534;padding:10px;border-radius:8px;margin-top:10px;text-align:center;font-weight:700}
+    footer{background:#0f172a;color:#cbd5e1;padding:30px 0;font-size:.86rem;text-align:center}
+
+    /* Painel Flutuante de Captura JSON (Didático) */
+    .fab{position:fixed;bottom:18px;right:18px;z-index:999;width:52px;height:52px;border-radius:50%;background:#7c3aed;color:#fff;border:none;font-size:1.3rem;cursor:pointer;box-shadow:0 6px 18px rgba(0,0,0,.3)}
+    .dbg{position:fixed;bottom:80px;right:18px;z-index:998;width:330px;max-width:calc(100vw - 36px);background:#0f172a;color:#e2e8f0;border:2px solid #7c3aed;border-radius:12px;padding:14px;font-size:.78rem;display:none}
+    .dbg.on{display:block}
+    .dbg-stat{display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px dashed #334155}
+    .dbg-btns{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:10px}
+    .dbg-btns button{background:#1e293b;color:#e2e8f0;border:1px solid #334155;padding:7px;border-radius:6px;cursor:pointer;font-size:.74rem;font-weight:700}
+    .dbg-btns button.pri{background:#7c3aed;border-color:#7c3aed;color:#fff}
+    .dbg textarea{width:100%;height:95px;margin-top:8px;background:#020617;color:#38bdf8;border:1px solid #334155;border-radius:6px;padding:6px;font-family:monospace;font-size:.68rem}
+    @media(max-width:740px){.grid2{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <a href="#principal" class="skip">Pular para o conteúdo</a>
+
+  <!-- ================= 4. CABEÇALHO ================= -->
+  <header>
+    <div class="wrap head">
+      <a href="#" class="logo" data-track="logo">
+        <span class="logo-box" aria-hidden="true">YJ</span>
+        <span>Yellow Jacket</span>
+      </a>
+      <nav aria-label="Menu principal">
+        <a href="#destaques" data-track="nav-destaques">Destaques</a>
+        <a href="#conteudo" data-track="nav-conteudo">Como Comprar no site</a>
+        <a href="#contato" class="btn" data-track="cta-topo">Participar Sorteios</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="principal">
+    <!-- ================= 5. HERO (APRESENTAÇÃO + 1 ÚNICO H1) ================= -->
+    <section class="hero" data-section="hero">
+      <div class="wrap grid2">
+        <div>
+          <!-- USE APENAS UM <h1> POR PÁGINA COM SUA PALAVRA-CHAVE PRINCIPAL -->
+          <h1>Yellow Jacket: moda masculina jovem com estilo urbano</h1>
+          <p style="color:var(--suave);margin:12px 0 20px">
+            <!-- Exemplos por nicho:
+                 Academia: "Treinos personalizados, musculação e aulas coletivas para todas as idades."
+                 Jogos: "Descubra jogos independentes, rankings semanais e torneios da comunidade."
+                 Humanitário: "Apoio alimentar, doações transparentes e voluntariado na sua região."
+                 Educação: "Cursos práticos gratuitos de tecnologia e mentoria para jovens." -->
+            Encontre camisetas oversized, moletons pesados, calças cargo e acessórios que combinam com seu estilo. Explore os lançamentos e experimente diferentes combinações no nosso provador 3D.
+          </p>
+          <div style="display:flex;gap:10px;flex-wrap:wrap">
+            <a href="#contato" class="btn" data-track="cta-hero">Quero conhecer as novidades →</a>
+            <a href="#conteudo" class="btn btn-out" data-track="cta-saiba-mais">Como funciona</a>
+          </div>
+        </div>
+        <figure class="hero-modelo">
+          <img
+            src="modelo-yellow-jacket.png"
+            alt="Modelo usando camiseta branca com detalhes amarelos e calça amarela da Yellow Jacket"
+          >
+        </figure>
+      </div>
+    </section>
+
+    <!-- ================= 6. DESTAQUES / SERVIÇOS / MODALIDADES ================= -->
+    <section id="destaques" class="alt" data-section="destaques">
+      <div class="wrap">
+        <h2>Encontre seu estilo na Yellow Jacket</h2>
+        <p style="color:var(--suave)">Peças e recursos para você conhecer as tendências, explorar combinações e escolher o visual que combina com sua personalidade.</p>
+        <div class="grid3">
+          <article class="card"><h3>👕 Camisetas oversized</h3><p style="color:var(--suave)">Camisetas de modelagem ampla para compor looks urbanos, confortáveis e cheios de personalidade.</p></article>
+          <article class="card"><h3>🧥 Moletons e calças cargo</h3><p style="color:var(--suave)">Conheça moletons pesados, calças cargo e outras peças para diferentes momentos do dia a dia.</p></article>
+          <article class="card"><h3>🧩 Provador virtual 3D</h3><p style="color:var(--suave)">Crie um avatar e teste combinações de peças no site para explorar possibilidades antes de escolher seu look.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 7. CONTEÚDO INFORMATIVO (AJUDA NO SEO!) ================= -->
+    <section id="conteudo" data-section="conteudo">
+      <div class="wrap" style="max-width:780px">
+        <article>
+          <h2>Como escolher e comprar na Yellow Jacket?</h2>
+          <p style="color:var(--suave);margin:10px 0">
+            Na Yellow Jacket, você pode conhecer as peças, conferir informações dos produtos e explorar combinações. Veja como aproveitar os recursos da loja:
+          </p>
+          <h3>1. Para quem é a Yellow Jacket?</h3>
+          <p style="color:var(--suave);margin-bottom:10px">A loja é voltada para quem gosta de moda masculina jovem, tendências urbanas e peças que unem conforto e autenticidade. Você pode explorar camisetas oversized, moletons, calças cargo e acessórios.</p>
+          <h3>2. Como conhecer as peças e montar combinações?</h3>
+          <p style="color:var(--suave)">Acompanhe os vídeos de lançamentos no Instagram, TikTok e YouTube. Depois, acesse o site para conferir peças, preços e tamanhos. Use o provador 3D para criar combinações e, se precisar de ajuda, fale com nossa equipe pelo formulário.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================= 8. FORMULÁRIO DE CONVERSÃO (CTA) ================= -->
+    <section id="contato" class="alt" data-section="contato">
+      <div class="wrap">
+        <div class="form-box">
+          <h2>Fale com a equipe Yellow Jacket</h2>
+          <p style="color:var(--suave);font-size:.9rem;margin-bottom:14px">Envie sua dúvida sobre produtos, pedidos, tamanhos ou participação nos sorteios. Nossa equipe poderá orientar você.</p>
+          <form id="formProjeto">
+            <div class="campo"><label for="nome">Nome *</label><input id="nome" required placeholder="Digite seu nome"></div>
+            <div class="campo"><label for="email">E-mail *</label><input id="email" type="email" required placeholder="voce@email.com"></div>
+            <div class="campo">
+              <label for="interesse">Assunto</label>
+              <select id="interesse">
+                <option value="Informações sobre produtos">Informações sobre produtos</option>
+                <option value="Dúvidas sobre pedidos">Dúvidas sobre pedidos</option>
+                <option value="Sorteios e promoções">Sorteios e promoções</option>
+                <option value="Trocas, entregas ou suporte">Trocas, entregas ou suporte</option>
+              </select>
+            </div>
+            <div class="campo">
+              <label for="persona">O que você procura?</label>
+              <select id="persona">
+                <option value="cliente">Conhecer roupas e lançamentos</option>
+                <option value="provador">Ajuda com o provador 3D</option>
+                <option value="pedido">Ajuda com um pedido</option>
+                <option value="outro">Outro assunto</option>
+              </select>
+            </div>
+            <div class="campo"><label for="msg">Mensagem (opcional)</label><textarea id="msg" rows="2" placeholder="Escreva sua dúvida ou mensagem..."></textarea></div>
+            <button type="submit" class="btn" style="width:100%" data-track="form-submit">Enviar agora →</button>
+            <div id="okMsg" class="ok-msg" role="status">✅ Mensagem registrada com sucesso!</div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">© 2026 Yellow Jacket — Moda masculina jovem, estilo urbano e autenticidade.</div>
+  </footer>
+
+  <!-- ================= 9. BOTÃO FLUTUANTE DE TELEMETRIA & JSON ================= -->
+  <button class="fab" id="dbgFab" aria-label="Abrir Analytics e JSON" title="Analytics &amp; JSON">📊</button>
+  <div class="dbg" id="dbgBox" role="dialog" aria-label="Telemetria local">
+    <strong>📊 Telemetria Local (localStorage)</strong>
+    <div class="dbg-stat"><span>Eventos salvos</span><strong id="stEv">0</strong></div>
+    <div class="dbg-stat"><span>Scroll máx.</span><strong id="stSc">0%</strong></div>
+    <div class="dbg-stat"><span>Formulários</span><strong id="stFm">0</strong></div>
+    <div class="dbg-btns">
+      <button type="button" class="pri" id="btnExp">⬇️ Exportar JSON</button>
+      <button type="button" id="btnImp">⬆️ Importar JSON</button>
+      <button type="button" id="btnVer">👁️ Ver JSON</button>
+      <button type="button" id="btnClr">🗑️ Limpar</button>
+    </div>
+    <input type="file" id="impFile" accept=".json,application/json" style="display:none">
+    <textarea id="dbgJson" readonly placeholder="Clique em Ver JSON..."></textarea>
+  </div>
+
+  <!-- ================= 10. JAVASCRIPT DE CAPTURA E EXPORTAÇÃO/IMPORTAÇÃO ================= -->
+  <script>
+  (function(){
+    var CHAVE = 'buscaweb_aluno_analytics';
+    var sessId = 'sess_' + Date.now().toString(36);
+    var inicio = Date.now(), scrollMax = 0, secAtual = null, secIni = null, formIni = false, formEnv = false;
+
+    function ler(){ try{ return JSON.parse(localStorage.getItem(CHAVE) || '[]'); }catch(e){ return []; } }
+    function salvar(arr){ try{ localStorage.setItem(CHAVE, JSON.stringify(arr)); }catch(e){} }
+    function reg(tipo, dados){
+      var arr = ler();
+      arr.push({ sessao:sessId, tipo:tipo, timestamp:Date.now(), url:location.href, viewport:{w:innerWidth,h:innerHeight}, scrollY:scrollY, dados:dados||{} });
+      salvar(arr); atualizarUI();
+    }
+
+    // Extrai resumo SEO do próprio HTML do aluno para envio junto ao JSON
+    function extrairSeoDom(){
+      var h1s = document.querySelectorAll('h1');
+      var imgs = Array.from(document.querySelectorAll('img'));
+      var noAlt = imgs.filter(function(i){ return !(i.getAttribute('alt')||'').trim(); }).length;
+      var txt = (document.body.innerText || '').replace(/\s+/g,' ').trim();
+      return {
+        title: document.title,
+        metaDescription: document.querySelector('meta[name="description"]')?.content || '',
+        canonical: document.querySelector('link[rel="canonical"]')?.href || '',
+        htmlLang: document.documentElement.lang || '',
+        hasViewport: !!document.querySelector('meta[name="viewport"]'),
+        h1Count: h1s.length,
+        h2Count: document.querySelectorAll('h2').length,
+        h3Count: document.querySelectorAll('h3').length,
+        totalImages: imgs.length,
+        imagesWithoutAlt: noAlt,
+        hasSchemaJsonLd: !!document.querySelector('script[type="application/ld+json"]'),
+        ctaCount: document.querySelectorAll('[data-track],button,a.btn').length,
+        wordCount: txt ? txt.split(' ').length : 0
+      };
+    }
+
+    reg('page_view', { titulo: document.title });
+
+    addEventListener('scroll', function(){
+      var h = document.documentElement.scrollHeight - innerHeight;
+      var p = h > 0 ? Math.round((scrollY / h) * 100) : 0;
+      if(p > scrollMax){ scrollMax = p; if(p % 25 === 0) reg('scroll', { profundidade:p }); }
+    }, { passive:true });
+
+    document.addEventListener('click', function(e){
+      if(e.target.closest('#dbgBox') || e.target.closest('#dbgFab')) return;
+      var cta = e.target.closest('[data-track]');
+      if(cta) reg('cta_click', { track:cta.getAttribute('data-track'), texto:(cta.textContent||'').trim().slice(0,40), x:e.clientX, y:e.clientY });
+      reg('click', { x:e.clientX, y:e.clientY, scrollY:scrollY });
+    });
+
+    if('IntersectionObserver' in window){
+      var obs = new IntersectionObserver(function(ents){
+        ents.forEach(function(en){
+          var n = en.target.getAttribute('data-section');
+          if(en.isIntersecting){
+            if(secAtual && secIni) reg('time_on_section', { secao:secAtual, duracao_s:Math.round((Date.now()-secIni)/1000) });
+            secAtual = n; secIni = Date.now();
+          } else if(secAtual === n && secIni){
+            reg('time_on_section', { secao:n, duracao_s:Math.round((Date.now()-secIni)/1000) });
+            secAtual = null; secIni = null;
+          }
+        });
+      }, { threshold:0.45 });
+      document.querySelectorAll('[data-section]').forEach(function(s){ obs.observe(s); });
+    }
+
+    var form = document.getElementById('formProjeto');
+    form.addEventListener('input', function(){ if(!formIni){ formIni=true; reg('form_start',{}); } });
+    form.addEventListener('submit', function(e){
+      e.preventDefault(); formEnv = true;
+      var nome = document.getElementById('nome').value.trim();
+      var email = document.getElementById('email').value.trim();
+      var msg = document.getElementById('msg').value.trim();
+      reg('form_submit', {
+        nome_mascarado: nome ? nome.split(' ')[0] + ' ***' : '***',
+        email_mascarado: email.indexOf('@')>-1 ? email.slice(0,2)+'***@'+email.split('@')[1] : '***',
+        telefone_mascarado: '—',
+        servico: document.getElementById('interesse').value,
+        persona_hint: document.getElementById('persona').value,
+        tem_mensagem: msg.length > 0,
+        tamanho_mensagem: msg.length
+      });
+      document.getElementById('okMsg').style.display = 'block';
+      form.reset();
+    });
+
+    addEventListener('beforeunload', function(){
+      if(formIni && !formEnv) reg('form_abandon', {});
+      reg('exit', { duracao_total_s:Math.round((Date.now()-inicio)/1000), scroll_max:scrollMax });
+    });
+
+    function atualizarUI(){
+      var arr = ler();
+      document.getElementById('stEv').textContent = arr.length;
+      document.getElementById('stSc').textContent = scrollMax + '%';
+      document.getElementById('stFm').textContent = arr.filter(function(x){ return x.tipo === 'form_submit'; }).length;
+    }
+
+    document.getElementById('dbgFab').onclick = function(){ document.getElementById('dbgBox').classList.toggle('on'); atualizarUI(); };
+    document.getElementById('btnVer').onclick = function(){ document.getElementById('dbgJson').value = JSON.stringify({ schema:'BuscaWeb-Site-Telemetry', seoMeta:extrairSeoDom(), eventos:ler() }, null, 2); };
+    document.getElementById('btnExp').onclick = function(){
+      var payload = { schema:'BuscaWeb-Site-Telemetry', exportedAt:new Date().toISOString(), seoMeta:extrairSeoDom(), eventos:ler() };
+      var a = document.createElement('a');
+      a.href = URL.createObjectURL(new Blob([JSON.stringify(payload,null,2)], {type:'application/json'}));
+      a.download = 'telemetria-projeto-' + sessId + '.json'; a.click();
+    };
+    document.getElementById('btnImp').onclick = function(){ document.getElementById('impFile').click(); };
+    document.getElementById('impFile').onchange = function(e){
+      var f = e.target.files[0]; if(!f) return;
+      var rd = new FileReader();
+      rd.onload = function(){
+        try{
+          var parsed = JSON.parse(rd.result);
+          var incoming = Array.isArray(parsed) ? parsed : (Array.isArray(parsed.eventos) ? parsed.eventos : null);
+          if(!incoming) return alert('JSON inválido.');
+          var atual = ler();
+          salvar(atual.concat(incoming)); atualizarUI();
+          alert('✅ ' + incoming.length + ' evento(s) importado(s) para o localStorage!');
+        }catch(err){ alert('Erro ao ler JSON: ' + err.message); }
+      };
+      rd.readAsText(f);
+    };
+    document.getElementById('btnClr').onclick = function(){ if(confirm('Limpar eventos locais?')){ localStorage.removeItem(CHAVE); document.getElementById('dbgJson').value=''; atualizarUI(); } };
+    atualizarUI();
+  })();
+  </script>
+</body>
+</html>
